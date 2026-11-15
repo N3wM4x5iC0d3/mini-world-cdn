@@ -1,0 +1,172 @@
+iD,唯一id（=id*1000+Tunestonelevel）,名字,权重,激活道具,符文石等级（1低级，2中级，3高级）,符文石类型（1攻击，2防御，4效率，3攻击+防御，5攻击+效率，6防御+效率，7攻击+防御+效率）,分类类型(同类型的符文互斥，不会出现在同一装备上),效果类型,效果数值1最小值,效果数值1最大值,效果数值2最小值,效果数值2最大值,"攻击类型: -1不限, 0:近程,1:远程,2:爆炸, 3:火,4:毒,5:暗,6:电,7:冰","目标类型:-1不限,0玩家npc,1野兽、2野人、3精英、4虚空、6外星、7水生",冲突类型（默认0，不冲突）,属性描述,显示类型（0/不填：正常数值&使用数值1，1：显示buff等级&使用数值2，2：显示百分数&使用数值1&需要程序*100，3：显示百分数&使用数值1，4：直接显示描述，5显示小数&需要程序/100）,工具类型1（对应tooldef.csv中的Type字段）,工具类型2,工具类型3,工具类型4,工具类型5,工具类型6,工具类型7,工具类型8,工具类型9,工具类型10,工具类型11,工具类型12,图标特效颜色, 基础特效, 基础特效2,图标（脚本ID库使用，引用IconBank表图标id）,,繁体属性描述,英文属性描述
+ID,keyid,Name,Weight,ActivateItemID,Tunestonelevel,Tunestone,Category,EnchantType,EnchantValue1Min,EnchantValue1Max,EnchantValue2Min,EnchantValue2Max,AttackType,TargetType,ConflictID,AttrDesc,DisplayType,ToolType1,ToolType2,ToolType3,ToolType4,ToolType5,ToolType6,ToolType7,ToolType8,ToolType9,ToolType10,ToolType11,ToolType12,Color,effect,effect2,Icon,,TWAttrDesc,ENAttrDesc
+5,5001,击飞,500,11080,1,5,21,KNOCKUP,1,4,0.1,0.1,0,-1,,有10%概率击飞+,,6,,,,,,,,,,,,ff8033CD,magic_impact,,DAMAGED_FALLING_ADD,,击飞+,knockup+
+5,5002,击飞,500,11080,2,5,21,KNOCKUP,1,4,0.2,0.2,0,-1,,有20%概率击飞+,,6,,,,,,,,,,,,ff8033CD,magic_impact,,DAMAGED_FALLING_ADD,,击飞+,knockup+
+5,5003,击飞,500,11080,3,5,21,KNOCKUP,1,4,0.3,0.3,0,-1,,有30%概率击飞+,,6,,,,,,,,,,,,ff8033CD,magic_impact,,DAMAGED_FALLING_ADD,,击飞+,knockup+
+6,6001,锐利,0,,1,5,2,SHARP,6,12,,,0,-1,,近战攻击+,,6,1,2,3,4,,,,,,,,ff8033CD,magic_sharp,,attack_punch_add,,近战攻击+,Melee attack+
+6,6002,锐利,0,,2,5,2,SHARP,13,22,,,0,-1,,近战攻击+,,6,1,2,3,4,,,,,,,,ff8033CD,magic_sharp,,attack_punch_add,,近战攻击+,Melee attack+
+6,6003,锐利,0,,3,5,2,SHARP,23,35,,,0,-1,,近战攻击+,,6,1,2,3,4,,,,,,,,ff8033CD,magic_sharp,,attack_punch_add,,近战攻击+,Melee attack+
+7,7001,人类猎手,0,,1,5,3,SHARP,8,20,,,0,0,,人类猎手+,,6,1,2,3,4,7,,,,,,,ff8033CD,magic_hunter,,attack_player_add,,对人近战伤害+,Melee attack damage to humans+
+7,7002,人类猎手,0,,2,5,3,SHARP,21,37,,,0,0,,人类猎手+,,6,1,2,3,4,7,,,,,,,ff8033CD,magic_hunter,,attack_player_add,,对人近战伤害+,Melee attack damage to humans+
+7,7003,人类猎手,0,,3,5,3,SHARP,38,60,,,0,0,,人类猎手+,,6,1,2,3,4,7,,,,,,,ff8033CD,magic_hunter,,attack_player_add,,对人近战伤害+,Melee attack damage to humans+
+8,8001,野兽猎手,0,,1,5,3,SHARP,8,20,,,0,1,,野兽猎手+,,6,1,2,3,4,7,,,,,,,ff8033CD,magic_hunter,,attack_animal_add,,对动物近战伤害+,Melee attack damage to animals+
+8,8002,野兽猎手,0,,2,5,3,SHARP,21,37,,,0,1,,野兽猎手+,,6,1,2,3,4,7,,,,,,,ff8033CD,magic_hunter,,attack_animal_add,,对动物近战伤害+,Melee attack damage to animals+
+8,8003,野兽猎手,0,,3,5,3,SHARP,38,60,,,0,1,,野兽猎手+,,6,1,2,3,4,7,,,,,,,ff8033CD,magic_hunter,,attack_animal_add,,对动物近战伤害+,Melee attack damage to animals+
+9,9001,精英猎手,0,,1,5,3,SHARP,8,20,,,0,3,,精英猎手+,,6,1,2,3,4,7,,,,,,,ff8033CD,magic_hunter,,attack_undead_add,,对地心硫磺弓手和熔岩巨人的近战攻击伤害+60,Melee attack damage to Sulfur Shooters and Magma Monsters +60
+9,9002,精英猎手,0,,2,5,3,SHARP,21,37,,,0,3,,精英猎手+,,6,1,2,3,4,7,,,,,,,ff8033CD,magic_hunter,,attack_undead_add,,对地心硫磺弓手和熔岩巨人的近战攻击伤害+60,Melee attack damage to Sulfur Shooters and Magma Monsters +60
+9,9003,精英猎手,0,,3,5,3,SHARP,38,60,,,0,3,,精英猎手+,,6,1,2,3,4,7,,,,,,,ff8033CD,magic_hunter,,attack_undead_add,,对地心硫磺弓手和熔岩巨人的近战攻击伤害+60,Melee attack damage to Sulfur Shooters and Magma Monsters +60
+29,29001,野人猎手,0,,1,5,3,SHARP,8,20,,,0,2,,野人猎手+,,6,1,2,3,4,7,,,,,,,ff8033CD,magic_hunter,,attack_wither_reduce,,对所有野人的近战攻击伤害+60,Melee attack damage to savages +60
+29,29002,野人猎手,0,,2,5,3,SHARP,21,37,,,0,2,,野人猎手+,,6,1,2,3,4,7,,,,,,,ff8033CD,magic_hunter,,attack_wither_reduce,,对所有野人的近战攻击伤害+60,Melee attack damage to savages +60
+29,29003,野人猎手,0,,3,5,3,SHARP,38,60,,,0,2,,野人猎手+,,6,1,2,3,4,7,,,,,,,ff8033CD,magic_hunter,,attack_wither_reduce,,对所有野人的近战攻击伤害+60,Melee attack damage to savages +60
+10,10001,点燃,350,11211,1,5,4,TARGET_FIRE,1074,1074,1,1,-1,-1,,点燃等级,1,6,7,,,,,,,,,,,ff8033CD,magic_ignite,magic_fireball,damagebuff_fire,,攻击会点燃目标3秒，每秒造成25点伤害。,The attack will ignite the target for 3 sec and deal 25 damage per sec.
+10,10002,点燃,350,11211,2,5,4,TARGET_FIRE,1074,1074,2,2,-1,-1,,点燃等级,1,6,7,,,,,,,,,,,ff8033CD,magic_ignite,magic_fireball,damagebuff_fire,,攻击会点燃目标3秒，每秒造成25点伤害。,The attack will ignite the target for 3 sec and deal 25 damage per sec.
+10,10003,点燃,350,11211,3,5,4,TARGET_FIRE,1074,1074,3,3,-1,-1,,点燃等级,1,6,7,,,,,,,,,,,ff8033CD,magic_ignite,magic_fireball,damagebuff_fire,,攻击会点燃目标3秒，每秒造成25点伤害。,The attack will ignite the target for 3 sec and deal 25 damage per sec.
+11,11001,击退距离增加,100,,1,5,1,KNOCK,1,2,,,-1,-1,,击退距离增加,,6,7,,,,,,,,,,,ff8033CD,magic_impact,magic_silverring,knock,,攻击会将目标额外击退10格。,This attack will knockback the target an extra 10 distance.
+11,11002,击退距离增加,90,11609,2,5,1,KNOCK,3,4,,,-1,-1,,击退距离增加,,6,7,,,,,,,,,,,ff8033CD,magic_impact,magic_silverring,knock,,攻击会将目标额外击退10格。,This attack will knockback the target an extra 10 distance.
+11,11003,击退距离增加,80,11611,3,5,1,KNOCK,5,6,,,-1,-1,,击退距离增加,,6,7,,,,,,,,,,,ff8033CD,magic_impact,magic_silverring,knock,,攻击会将目标额外击退10格。,This attack will knockback the target an extra 10 distance.
+12,12001,狩猎幸运,150,,1,5,5,ROB,1,1,,,-1,-1,,狩猎幸运等级,,6,7,,,,,,,,,,,ff8033CD,magic_lucky,magic_goldring,luck_killmob,,击败生物时有20/15/15%几率获得二/三/四倍掉落。,20%/15%/15% chance to get double/triple/quadruple drops when defeating creatures.
+12,12002,狩猎幸运,135,11609,2,5,5,ROB,2,2,,,-1,-1,,狩猎幸运等级,,6,7,,,,,,,,,,,ff8033CD,magic_lucky,magic_goldring,luck_killmob,,击败生物时有20/15/15%几率获得二/三/四倍掉落。,20%/15%/15% chance to get double/triple/quadruple drops when defeating creatures.
+12,12003,狩猎幸运,120,11611,3,5,5,ROB,3,3,,,-1,-1,,狩猎幸运等级,,6,7,,,,,,,,,,,ff8033CD,magic_lucky,magic_goldring,luck_killmob,,击败生物时有20/15/15%几率获得二/三/四倍掉落。,20%/15%/15% chance to get double/triple/quadruple drops when defeating creatures.
+13,13001,强力射击,100,,1,1,6,BOW_ATTACK,0.35,0.5,,,1,-1,,弓箭伤害+,2,7,,,,,,,,,,,,ff8033CD,,magic_strong,attack_range_add,,弓箭射击的伤害增加125%。,Increases bow attack damage by 125%.
+13,13002,强力射击,90,11609,2,1,6,BOW_ATTACK,0.6,0.8,,,1,-1,,弓箭伤害+,2,7,,,,,,,,,,,,ff8033CD,,magic_strong,attack_range_add,,弓箭射击的伤害增加125%。,Increases bow attack damage by 125%.
+13,13003,强力射击,80,11611,3,1,6,BOW_ATTACK,0.9,1.25,,,1,-1,,弓箭伤害+,2,7,,,,,,,,,,,,ff8033CD,,magic_strong,attack_range_add,,弓箭射击的伤害增加125%。,Increases bow attack damage by 125%.
+14,14001,无限射击,0,11221,1,1,7,ARROW_FREE,1,1,,,-1,-1,,无限射击,4,7,,,,,,,,,,,,ff8033CD,,magic_purpleball,attack_range_add,,弓箭射击不再消耗箭，转为额外消耗1点耐久度。,You are able to ben a bow to shoot without arrows. Each shot consumes another 5 durability.
+14,14002,无限射击,0,11221,2,1,7,ARROW_FREE,1,1,,,-1,-1,,无限射击,4,7,,,,,,,,,,,,ff8033CD,,magic_purpleball,attack_range_add,,弓箭射击不再消耗箭，转为额外消耗1点耐久度。,You are able to ben a bow to shoot without arrows. Each shot consumes another 5 durability.
+14,14003,无限射击,60000,11221,3,1,7,ARROW_FREE,1,1,,,-1,-1,,无限射击,4,7,,,,,,,,,,,,ff8033CD,,magic_purpleball,attack_range_add,,弓箭射击不再消耗箭，转为额外消耗1点耐久度。,You are able to ben a bow to shoot without arrows. Each shot consumes another 5 durability.
+15,15001,耐久,150,,1,7,8,DURABLE,50,100,,,-1,-1,,耐久度+,3,1,2,3,4,6,7,29,,,,,,ff8033CD,,,armor_add,,增加物品耐久度320%。,Increase durability of items by 320%.
+15,15002,耐久,135,11609,2,7,8,DURABLE,150,200,,,-1,-1,,耐久度+,3,1,2,3,4,6,7,29,,,,,,ff8033CD,,,armor_add,,增加物品耐久度320%。,Increase durability of items by 320%.
+15,15003,耐久,120,11611,3,7,8,DURABLE,240,300,,,-1,-1,,耐久度+,3,1,2,3,4,6,7,29,,,,,,ff8033CD,,,armor_add,,增加物品耐久度320%。,Increase durability of items by 320%.
+16,16001,近战抗性,0,,1,2,9,PROTECTION,1,5,,,0,-1,,近战抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_punch_add,,新增15点近战抗性点数。,Melee resistance +15
+16,16002,近战抗性,0,,2,2,9,PROTECTION,6,10,,,0,-1,,近战抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_punch_add,,新增15点近战抗性点数。,Melee resistance +15
+16,16003,近战抗性,0,,3,2,9,PROTECTION,11,15,,,0,-1,,近战抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_punch_add,,新增15点近战抗性点数。,Melee resistance +15
+17,17001,远程抗性,0,,1,2,10,PROTECTION,1,5,,,1,-1,,远程抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_range_add,,新增15点远程抗性点数。,Ranged resistance +15
+17,17002,远程抗性,0,,2,2,10,PROTECTION,6,10,,,1,-1,,远程抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_range_add,,新增15点远程抗性点数。,Ranged resistance +15
+17,17003,远程抗性,0,,3,2,10,PROTECTION,11,15,,,1,-1,,远程抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_range_add,,新增15点远程抗性点数。,Ranged resistance +15
+18,18001,爆炸抗性,0,,1,2,11,PROTECTION,1,5,,,2,-1,,爆炸抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_explode_add,,新增15点爆炸抗性点数。,Blast resistance +15
+18,18002,爆炸抗性,0,,2,2,11,PROTECTION,6,10,,,2,-1,,爆炸抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_explode_add,,新增15点爆炸抗性点数。,Blast resistance +15
+18,18003,爆炸抗性,0,,3,2,11,PROTECTION,11,15,,,2,-1,,爆炸抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_explode_add,,新增15点爆炸抗性点数。,Blast resistance +15
+19,19001,燃烧抗性,150,,1,2,12,PROTECTION,1,5,,,3,-1,,燃烧抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_fire_add,,新增15点火焰抗性点数。,Flame resistance +15
+19,19002,燃烧抗性,135,11609,2,2,12,PROTECTION,6,10,,,3,-1,,燃烧抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_fire_add,,新增15点火焰抗性点数。,Flame resistance +15
+19,19003,燃烧抗性,120,11611,3,2,12,PROTECTION,11,15,,,3,-1,,燃烧抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_fire_add,,新增15点火焰抗性点数。,Flame resistance +15
+20,20001,毒素抗性,150,,1,2,12,PROTECTION,1,5,,,4,-1,,毒素抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_poison_add,,新增15点毒素抗性点数。,Poison resistance +15
+20,20002,毒素抗性,135,11609,2,2,12,PROTECTION,6,10,,,4,-1,,毒素抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_poison_add,,新增15点毒素抗性点数。,Poison resistance +15
+20,20003,毒素抗性,120,11611,3,2,12,PROTECTION,11,15,,,4,-1,,毒素抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_poison_add,,新增15点毒素抗性点数。,Poison resistance +15
+21,21001,混乱抗性,150,,1,2,12,PROTECTION,1,5,,,5,-1,,混乱抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,dameged_wither_add,,新增15点混乱抗性点数。,Chaos resistance +15
+21,21002,混乱抗性,135,11609,2,2,12,PROTECTION,6,10,,,5,-1,,混乱抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,dameged_wither_add,,新增15点混乱抗性点数。,Chaos resistance +15
+21,21003,混乱抗性,120,11611,3,2,12,PROTECTION,11,15,,,5,-1,,混乱抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,dameged_wither_add,,新增15点混乱抗性点数。,Chaos resistance +15
+22,22001,反击,100,,1,2,13,THORNS,15,15,5,15,-1,-1,,有15%概率反伤+,1,8,9,10,11,,,,,,,,,ff8033CD,,,Hamster_Ball,,被近战攻击的时候有50%几率对攻击者造成25点伤害。,Gives a 50% chance to deal 5 damage to attackers during a melee attack
+22,22002,反击,90,11609,2,2,13,THORNS,30,30,10,20,-1,-1,,有30%概率反伤+,1,8,9,10,11,,,,,,,,,ff8033CD,,,Hamster_Ball,,被近战攻击的时候有50%几率对攻击者造成25点伤害。,Gives a 50% chance to deal 5 damage to attackers during a melee attack
+22,22003,反击,80,11611,3,2,13,THORNS,45,45,15,25,-1,-1,,有45%概率反伤+,1,8,9,10,11,,,,,,,,,ff8033CD,,,Hamster_Ball,,被近战攻击的时候有50%几率对攻击者造成25点伤害。,Gives a 50% chance to deal 5 damage to attackers during a melee attack
+23,23001,击退距离减少,0,,1,2,14,KNOCK_RESIST,1,1,,,-1,-1,,被击退距离减少,,8,9,10,11,,,,,,,,,ff8033CD,,,knock_resist,,被攻击的时候减少被击退5格。,Lowers the knockback distance by 5m when being attacked.
+23,23002,击退距离减少,0,,2,2,14,KNOCK_RESIST,2,3,,,-1,-1,,被击退距离减少,,8,9,10,11,,,,,,,,,ff8033CD,,,knock_resist,,被攻击的时候减少被击退5格。,Lowers the knockback distance by 5m when being attacked.
+23,23003,击退距离减少,0,,3,2,14,KNOCK_RESIST,4,5,,,-1,-1,,被击退距离减少,,8,9,10,11,,,,,,,,,ff8033CD,,,knock_resist,,被攻击的时候减少被击退5格。,Lowers the knockback distance by 5m when being attacked.
+24,24001,完整获取,0,11911,1,4,15,DIG_PRECISE,1,1,,,-1,-1,26,完整获取,,1,2,3,4,,,,,,,,,ff8033CD,,,dig_speed_add,,采集方块的时候，会掉落方块本身。,When you collect cubes. Cubes will drop.
+24,24002,完整获取,0,11911,2,4,15,DIG_PRECISE,1,1,,,-1,-1,26,完整获取,,1,2,3,4,,,,,,,,,ff8033CD,,,dig_speed_add,,采集方块的时候，会掉落方块本身。,When you collect cubes. Cubes will drop.
+24,24003,完整获取,80,11911,3,4,15,DIG_PRECISE,1,1,,,-1,-1,26,完整获取,,1,2,3,4,,,,,,,,,ff8033CD,,,dig_speed_add,,采集方块的时候，会掉落方块本身。,When you collect cubes. Cubes will drop.
+25,25001,挖掘速度,200,,1,4,16,DIG_SPEED,0.35,0.5,,,-1,-1,,挖掘速度+,2,1,2,3,4,,,,,,,,,ff8033CD,,,move_speed_add,,增加采集速度250%。,Increase collection speed by 250%.
+25,25002,挖掘速度,180,11609,2,4,16,DIG_SPEED,0.6,1,,,-1,-1,,挖掘速度+,2,1,2,3,4,,,,,,,,,ff8033CD,,,move_speed_add,,增加采集速度250%。,Increase collection speed by 250%.
+25,25003,挖掘速度,160,11611,3,4,16,DIG_SPEED,1,1.5,,,-1,-1,,挖掘速度+,2,1,2,3,4,,,,,,,,,ff8033CD,,,move_speed_add,,增加采集速度250%。,Increase collection speed by 250%.
+26,26001,挖掘幸运,75,,1,4,15,DIG_PROB,1,1,,,-1,-1,24,挖掘幸运等级,,1,2,3,4,,,,,,,,,ff8033CD,,,,,镐：采集矿物的时候，有20/10/4%几率获得二/三/四倍掉落。,Pickaxe: 20%/10%/4% chance to get double/triple/quadruple ore drops. 
+26,26002,挖掘幸运,65,11609,2,4,15,DIG_PROB,2,2,,,-1,-1,24,挖掘幸运等级,,1,2,3,4,,,,,,,,,ff8033CD,,,,,镐：采集矿物的时候，有20/10/4%几率获得二/三/四倍掉落。,Pickaxe: 20%/10%/4% chance to get double/triple/quadruple ore drops. 
+26,26003,挖掘幸运,55,11611,3,4,15,DIG_PROB,3,3,,,-1,-1,24,挖掘幸运等级,,1,2,3,4,,,,,,,,,ff8033CD,,,,,镐：采集矿物的时候，有20/10/4%几率获得二/三/四倍掉落。,Pickaxe: 20%/10%/4% chance to get double/triple/quadruple ore drops. 
+27,27001,爆炸射击,0,,1,1,17,ARROW_EXPLODE,2,2,,,-1,-1,,爆炸射击+,,7,,,,,,,,,,,,ff8033CD,,,attack_all_add,,弓箭射中目标后会产生爆炸。。,The target will blow up when hit by an arrow.
+27,27002,爆炸射击,0,,2,1,17,ARROW_EXPLODE,3,3,,,-1,-1,,爆炸射击+,,7,,,,,,,,,,,,ff8033CD,,,attack_all_add,,弓箭射中目标后会产生爆炸。。,The target will blow up when hit by an arrow.
+27,27003,爆炸射击,0,,3,1,17,ARROW_EXPLODE,3,4,,,-1,-1,,爆炸射击+,,7,,,,,,,,,,,,ff8033CD,,,attack_all_add,,弓箭射中目标后会产生爆炸。。,The target will blow up when hit by an arrow.
+28,28001,龙之缓落,500,11069,1,2,18,FALL_PROTECT,20,50,0.1,0.1,-1,-1,,掉落伤害-,,8,,,,,,,,,,,,ff8033CD,item_11016_noop,,model_ghost,,摔落伤害-150，并降低下落速度。,Falling damage reduces by 150 and falling speed reduces.
+28,28002,龙之缓落,500,11069,2,2,18,FALL_PROTECT,51,100,0.1,0.1,-1,-1,,掉落伤害-,,8,,,,,,,,,,,,ff8033CD,item_11016_noop,,model_ghost,,摔落伤害-150，并降低下落速度。,Falling damage reduces by 150 and falling speed reduces.
+28,28003,龙之缓落,500,11069,3,2,18,FALL_PROTECT,101,150,0.1,0.1,-1,-1,,掉落伤害-,,8,,,,,,,,,,,,ff8033CD,item_11016_noop,,model_ghost,,摔落伤害-150，并降低下落速度。,Falling damage reduces by 150 and falling speed reduces.
+30,30001,速降（护腿）,500,11067,1,2,19,Fall_SPEED,0.5,0.8,3,8,-1,-1,,空中下蹲速度+,2,10,,,,,,,,,,,,ff8033CD,,,jump_speed_add,,,
+30,30002,速降（护腿）,500,11067,2,2,19,Fall_SPEED,0.9,1.2,9,14,-1,-1,,空中下蹲速度+,2,10,,,,,,,,,,,,ff8033CD,,,jump_speed_add,,,
+30,30003,速降（护腿）,500,11067,3,2,19,Fall_SPEED,1.3,1.8,15,20,-1,-1,,空中下蹲速度+,2,10,,,,,,,,,,,,ff8033CD,,,jump_speed_add,,,
+31,31001,爬墙（鞋子）,500,11068,1,2,20,CLIMB,-0.3,-0.25,4,3,-1,-1,,可爬墙，但速度,2,11,,,,,,,,,,,,ff8033CD,,,move_speed_add,,,
+31,31002,爬墙（鞋子）,500,11068,2,2,20,CLIMB,-0.25,-0.2,3,2,-1,-1,,可爬墙，但速度,2,11,,,,,,,,,,,,ff8033CD,,,move_speed_add,,,
+31,31003,爬墙（鞋子）,500,11068,3,2,20,CLIMB,-0.2,-0.1,2,1,-1,-1,,可爬墙，但速度,2,11,,,,,,,,,,,,ff8033CD,,,move_speed_add,,,
+32,32001,流血,150,11914,1,1,4,TARGET_BLEED,1020,1020,1,2,-1,-1,,流血等级,1,6,7,,,,,,,,,,,ff8033CD,magic_ignite,,damagebuff_bleed,,,
+32,32002,流血,150,11914,2,1,4,TARGET_BLEED,1020,1020,3,4,-1,-1,,流血等级,1,6,7,,,,,,,,,,,ff8033CD,magic_ignite,,damagebuff_bleed,,,
+32,32003,流血,150,11914,3,1,4,TARGET_BLEED,1020,1020,5,5,-1,-1,,流血等级,1,6,7,,,,,,,,,,,ff8033CD,magic_ignite,,damagebuff_bleed,,,
+33,33001,闪电鞭,200,11648,1,1,4,LIGHTNING_CHAIN,3,3,10,10,-1,-1,,闪电鞭等级1,4,6,7,,,,,,,,,,,ff8033CD,sea_03_fumo,,,,,
+33,33002,闪电鞭,300,11648,2,1,4,LIGHTNING_CHAIN,4,4,20,20,-1,-1,,闪电鞭等级2,4,6,7,,,,,,,,,,,ff8033CD,sea_03_fumo,,,,,
+33,33003,闪电鞭,500,11648,3,1,4,LIGHTNING_CHAIN,6,6,30,30,-1,-1,,闪电鞭等级3,4,6,7,,,,,,,,,,,ff8033CD,sea_03_fumo,,,,,
+34,34003,闪电鞭,0,11648,3,1,4,LIGHTNING_CHAIN,6,6,20,20,-1,-1,,闪电鞭等级4,4,6,7,,,,,,,,,,,ff8033CD,sea_03_fumo,,,,,
+35,35003,闪电鞭,0,11648,3,1,4,LIGHTNING_CHAIN,6,6,30,30,-1,-1,,闪电鞭等级5,4,6,7,,,,,,,,,,,ff8033CD,sea_03_fumo,,,,,
+36,36001,钓鱼幸运,100,,1,5,22,FISH,1,1,,,-1,-1,,钓鱼幸运等级,,29,,,,,,,,,,,,ff8033CD,magic_lucky,magic_goldring,luck_killmob,,钓鱼时有20/15/15%几率获得二/三/四倍掉落。,20%/15%/15% chance to get double/triple/quadruple drops when defeating creatures.
+36,36002,钓鱼幸运,90,11609,2,5,22,FISH,2,2,,,-1,-1,,钓鱼幸运等级,,29,,,,,,,,,,,,ff8033CD,magic_lucky,magic_goldring,luck_killmob,,钓鱼时有20/15/15%几率获得二/三/四倍掉落。,20%/15%/15% chance to get double/triple/quadruple drops when defeating creatures.
+36,36003,钓鱼幸运,80,11611,3,5,22,FISH,3,3,,,-1,-1,,钓鱼幸运等级,,29,,,,,,,,,,,,ff8033CD,magic_lucky,magic_goldring,luck_killmob,,钓鱼时有20/15/15%几率获得二/三/四倍掉落。,20%/15%/15% chance to get double/triple/quadruple drops when defeating creatures.
+37,37001,御寒,100,12623,1,2,23,TEMPDEF,50,50,,,-1,-1,,御寒+,5,8,9,10,11,,,,,,,,,ff8033CD,,,,,,
+37,37002,御寒,100,12623,2,2,23,TEMPDEF,100,100,,,-1,-1,,御寒+,5,8,9,10,11,,,,,,,,,ff8033CD,,,,,,
+37,37003,御寒,100,12623,3,2,23,TEMPDEF,150,150,,,-1,-1,,御寒+,5,8,9,10,11,,,,,,,,,ff8033CD,,,,,,
+38,38001,冰冻抗性,150,,1,2,12,PROTECTION,1,5,,,7,-1,,冰冻抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,,,,
+38,38002,冰冻抗性,135,11609,2,2,12,PROTECTION,6,10,,,7,-1,,冰冻抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,,,,
+38,38003,冰冻抗性,120,11611,3,2,12,PROTECTION,11,15,,,7,-1,,冰冻抗性+,,8,9,10,11,,,,,,,,,ff8033CD,,,,,,
+39,39003,工具庇佑,450,764,3,4,24,DURABLE_PROTECT,,,,,-1,-1,,工具庇佑,4,1,2,3,4,29,,,,,,,,ff8033CD,,,,,使工具在耐久度归零时不被破坏，但会暂时失去所有功能,
+40,40003,武器庇佑,500,764,3,1,25,DURABLE_PROTECT,,,,,-1,-1,,武器庇佑,4,6,7,,,,,,,,,,,ff8033CD,,,,,使武器在耐久度归零时不被破坏，但会暂时失去所有功能,
+41,41003,装备庇佑,450,764,3,2,26,DURABLE_PROTECT,,,,,-1,-1,,装备庇佑,4,8,9,10,11,,,,,,,,,ff8033CD,,,,,使装备在耐久度归零时不被破坏，但会暂时失去所有功能,
+42,42001,冰伤,500,12710,1,5,4,TARGET_ICE,1050,1050,1,2,7,-1,10,冰伤等级,1,6,7,1,2,3,4,,,,,,,ff8033CD,magic_cold,magic_ice,IceSlow,,攻击使目标减速，降温，并受到冰属性伤害,"The attack slows the target, cools it down, and deals ice damage"
+42,42002,冰伤,500,12710,2,5,4,TARGET_ICE,1050,1050,3,4,7,-1,10,冰伤等级,1,6,7,1,2,3,4,,,,,,,ff8033CD,magic_cold,magic_ice,IceSlow,,攻击使目标减速，降温，并受到冰属性伤害,"The attack slows the target, cools it down, and deals ice damage"
+42,42003,冰伤,500,12710,3,5,4,TARGET_ICE,1050,1050,5,5,7,-1,10,冰伤等级,1,6,7,1,2,3,4,,,,,,,ff8033CD,magic_cold,magic_ice,IceSlow,,攻击使目标减速，降温，并受到冰属性伤害，可能冻结目标,"The attack slows the target, cools it down, and takes ice damage, possibly freezing the target"
+43,43001,近战物理伤害加成,100,,1,1,2,PUNCH_INC,0.1,0.2,,,0,-1,,近战物理伤害+,2,6,,,,,,,,,,,,ff8033CD,magic_sharp,,attack_punch_add,,,
+43,43002,近战物理伤害加成,90,11609,2,1,2,PUNCH_INC,0.25,0.35,,,0,-1,,近战物理伤害+,2,6,,,,,,,,,,,,ff8033CD,magic_sharp,,attack_punch_add,,,
+43,43003,近战物理伤害加成,80,11611,3,1,2,PUNCH_INC,0.4,0.5,,,0,-1,,近战物理伤害+,2,6,,,,,,,,,,,,ff8033CD,magic_sharp,,attack_punch_add,,,
+44,44001,坚毅,150,11911,1,2,9,DAMAGE_DEC,0.02,0.05,,,-1,-1,,伤害减免+,2,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_punch_add,,,
+44,44002,坚毅,150,11911,2,2,9,DAMAGE_DEC,0.05,0.08,,,-1,-1,,伤害减免+,2,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_punch_add,,,
+44,44003,坚毅,150,11911,3,2,9,DAMAGE_DEC,0.08,0.125,,,-1,-1,,伤害减免+,2,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_punch_add,,,
+45,45001,远程保护,100,,1,2,10,RANGE_DAMAGE_DEC,0.02,0.05,,,1,-1,,远程物理伤害-,2,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_range_add,,,
+45,45002,远程保护,90,11609,2,2,10,RANGE_DAMAGE_DEC,0.05,0.08,,,1,-1,,远程物理伤害-,2,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_range_add,,,
+45,45003,远程保护,80,11611,3,2,10,RANGE_DAMAGE_DEC,0.08,0.125,,,1,-1,,远程物理伤害-,2,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_range_add,,,
+46,46001,爆炸保护,100,,1,2,11,EXPLODE_DEC,0.02,0.05,,,2,-1,,爆炸伤害-,2,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_explode_add,,,
+46,46002,爆炸保护,90,11609,2,2,11,EXPLODE_DEC,0.05,0.08,,,2,-1,,爆炸伤害-,2,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_explode_add,,,
+46,46003,爆炸保护,80,11611,3,2,11,EXPLODE_DEC,0.08,0.125,,,2,-1,,爆炸伤害-,2,8,9,10,11,,,,,,,,,ff8033CD,,,damaged_explode_add,,,
+47,47001,韧性恢复速度,0,,1,1,27,TOUGH_REC,0.1,0.15,,,-1,-1,,韧性恢复速度+,2,,,,,,,,,,,,,ff8033CD,,,Hamster_Ball,,,
+47,47002,韧性恢复速度,0,,2,1,27,TOUGH_REC,0.2,0.25,,,-1,-1,,韧性恢复速度+,2,,,,,,,,,,,,,ff8033CD,,,Hamster_Ball,,,
+47,47003,韧性恢复速度,0,,3,1,27,TOUGH_REC,0.3,0.35,,,-1,-1,,韧性恢复速度+,2,,,,,,,,,,,,,ff8033CD,,,Hamster_Ball,,,
+48,48001,跳高高,100,,1,2,28,JUMP_INC,1,2,,,-1,-1,,跳跃能力+,,8,9,10,11,,,,,,,,,ff8033CD,item_11016_noop,,model_ghost,,,
+48,48002,跳高高,90,11609,2,2,28,JUMP_INC,3,4,,,-1,-1,,跳跃能力+,,8,9,10,11,,,,,,,,,ff8033CD,item_11016_noop,,model_ghost,,,
+48,48003,跳高高,80,11611,3,2,28,JUMP_INC,5,6,,,-1,-1,,跳跃能力+,,8,9,10,11,,,,,,,,,ff8033CD,item_11016_noop,,model_ghost,,,
+49,49001,变变变,100,,1,5,1,ADDBUFF,0.02,0.04,1003001,1003001,-1,-1,,使敌方变身概率+,2,6,7,1,2,3,4,29,,,,,,ff8033CD,,,knock,,,
+49,49002,变变变,90,11609,2,5,1,ADDBUFF,0.05,0.07,1003001,1003001,-1,-1,,使敌方变身概率+,2,6,7,1,2,3,4,29,,,,,,ff8033CD,,,knock,,,
+49,49003,变变变,80,11611,3,5,1,ADDBUFF,0.07,0.1,1003001,1003001,-1,-1,,使敌方变身概率+,2,6,7,1,2,3,4,29,,,,,,ff8033CD,,,knock,,,
+50,50001,耐久保护,150,,1,2,29,DURABLE_PROB,0.1,0.2,,,-1,-1,,不掉耐久的概率+,2,8,9,10,11,,,,,,,,,ff8033CD,,,armor_add,,,
+50,50002,耐久保护,135,11609,2,2,29,DURABLE_PROB,0.2,0.3,,,-1,-1,,不掉耐久的概率+,2,8,9,10,11,,,,,,,,,ff8033CD,,,armor_add,,,
+50,50003,耐久保护,120,11611,3,2,29,DURABLE_PROB,0.3,0.4,,,-1,-1,,不掉耐久的概率+,2,8,9,10,11,,,,,,,,,ff8033CD,,,armor_add,,,
+51,51001,快速钓鱼,100,,1,4,30,FISHING_TIME_DEC,0.1,0.15,,,-1,-1,,钓鱼速度+,2,29,,,,,,,,,,,,ff8033CD,magic_lucky,magic_goldring,luck_killmob,,,
+51,51002,快速钓鱼,90,11609,2,4,30,FISHING_TIME_DEC,0.2,0.25,,,-1,-1,,钓鱼速度+,2,29,,,,,,,,,,,,ff8033CD,magic_lucky,magic_goldring,luck_killmob,,,
+51,51003,快速钓鱼,80,11611,3,4,30,FISHING_TIME_DEC,0.3,0.35,,,-1,-1,,钓鱼速度+,2,29,,,,,,,,,,,,ff8033CD,magic_lucky,magic_goldring,luck_killmob,,,
+52,52001,迟缓,100,,1,5,1,ADDBUFF,0.03,0.06,1000003,1000003,-1,-1,,使敌方减速概率+,2,6,7,1,2,3,4,29,,,,,,ff8033CD,,,move_speed_add,,,
+52,52002,迟缓,90,11609,2,5,1,ADDBUFF,0.06,0.1,1000003,1000003,-1,-1,,使敌方减速概率+,2,6,7,1,2,3,4,29,,,,,,ff8033CD,,,move_speed_add,,,
+52,52003,迟缓,80,11611,3,5,1,ADDBUFF,0.1,0.15,1000003,1000003,-1,-1,,使敌方减速概率+,2,6,7,1,2,3,4,29,,,,,,ff8033CD,,,move_speed_add,,,
+53,53001,挖掘体力降低,100,,1,4,31,DIGGING_STRENGTH_DEC,0.05,0.1,,,-1,-1,,挖掘体力下降,2,1,2,3,4,,,,,,,,,ff8033CD,,,dig_speed_add,,,
+53,53002,挖掘体力降低,90,11609,2,4,31,DIGGING_STRENGTH_DEC,0.1,0.2,,,-1,-1,,挖掘体力下降,2,1,2,3,4,,,,,,,,,ff8033CD,,,dig_speed_add,,,
+53,53003,挖掘体力降低,80,11611,3,4,31,DIGGING_STRENGTH_DEC,0.15,0.2,,,-1,-1,,挖掘体力下降,2,1,2,3,4,,,,,,,,,ff8033CD,,,dig_speed_add,,,
+54,54001,陨石落,400,11080,1,2,32,FALL_DAMAGE,,,,,-1,-1,,陨石落,4,9,,,,,,,,,,,,ff8033CD,magic_sharp,,,,陨石落,
+54,54002,陨石落,400,11080,2,2,32,FALL_DAMAGE,,,,,-1,-1,,陨石落,4,9,,,,,,,,,,,,ff8033CD,magic_sharp,,,,陨石落,
+54,54003,陨石落,400,11080,3,2,32,FALL_DAMAGE,,,,,-1,-1,,陨石落,4,9,,,,,,,,,,,,ff8033CD,magic_sharp,,,,陨石落,
+55,55001,星星经验加成,150,,1,5,33,STAR_INC,0.02,0.05,,,-1,-1,,星星经验获取+,2,6,7,1,2,3,4,29,,,,,,ff8033CD,,,luck_dig,,,
+55,55002,星星经验加成,135,11609,2,5,33,STAR_INC,0.06,0.1,,,-1,-1,,星星经验获取+,2,6,7,1,2,3,4,29,,,,,,ff8033CD,,,luck_dig,,,
+55,55003,星星经验加成,120,11611,3,5,33,STAR_INC,0.1,0.15,,,-1,-1,,星星经验获取+,2,6,7,1,2,3,4,29,,,,,,ff8033CD,,,luck_dig,,,
+56,56001,技能疾速,500,11664,1,1,34,WEAPON_SKILL_CD_DEC,0.05,0.08,,,-1,-1,,技能冷却-,2,6,7,1,2,3,4,,,,,,,ff8033CD,,,,,,
+56,56002,技能疾速,500,11664,2,1,34,WEAPON_SKILL_CD_DEC,0.08,0.11,,,-1,-1,,技能冷却-,2,6,7,1,2,3,4,,,,,,,ff8033CD,,,,,,
+56,56003,技能疾速,500,11664,3,1,34,WEAPON_SKILL_CD_DEC,0.12,0.15,,,-1,-1,,技能冷却-,2,6,7,1,2,3,4,,,,,,,ff8033CD,,,,,,
+57,57001,最后一击,60,,1,1,35,COMBO_LAST_INC,,,,,-1,-1,,最后一击伤害+15%,4,6,,,,,,,,,,,,ff8033CD,magic_sharp,,,,,
+57,57002,最后一击,70,11609,2,1,35,COMBO_LAST_INC,,,,,-1,-1,,最后一击伤害+15%,4,6,,,,,,,,,,,,ff8033CD,magic_sharp,,,,,
+57,57003,最后一击,80,11611,3,1,35,COMBO_LAST_INC,,,,,-1,-1,,最后一击伤害+15%,4,6,,,,,,,,,,,,ff8033CD,magic_sharp,,,,,
+58,58001,击退抗性,80,,1,2,36,REPEL_RES,500,500,,,-1,-1,,击退抗性+5%,4,8,9,10,11,,,,,,,,,ff8033CD,magic_impact,,knock_resist,,,
+58,58002,击退抗性,70,11609,2,2,36,REPEL_RES,1000,1000,,,-1,-1,,击退抗性+10%,4,8,9,10,11,,,,,,,,,ff8033CD,magic_impact,,knock_resist,,,
+58,58003,击退抗性,60,11611,3,2,36,REPEL_RES,1500,1500,,,-1,-1,,击退抗性+15%,4,8,9,10,11,,,,,,,,,ff8033CD,magic_impact,,knock_resist,,,
+59,59001,野兽伤害加成,100,,1,1,3,MONSTER_DAMAGE,0.1,0.2,,,-1,1,,对野兽伤害+,2,6,7,,,,,,,,,,,ff8033CD,magic_hunter,,attack_animal_add,,,
+59,59002,野兽伤害加成,90,11609,2,1,3,MONSTER_DAMAGE,0.25,0.35,,,-1,1,,对野兽伤害+,2,6,7,,,,,,,,,,,ff8033CD,magic_hunter,,attack_animal_add,,,
+59,59003,野兽伤害加成,80,11611,3,1,3,MONSTER_DAMAGE,0.4,0.5,,,-1,1,,对野兽伤害+,2,6,7,,,,,,,,,,,ff8033CD,magic_hunter,,attack_animal_add,,,
+60,60001,野人伤害加成,100,,1,1,3,MONSTER_DAMAGE,0.1,0.2,,,-1,2,,对野人伤害+,2,6,7,,,,,,,,,,,ff8033CD,magic_hunter,,attack_undead_add,,,
+60,60002,野人伤害加成,90,11609,2,1,3,MONSTER_DAMAGE,0.25,0.35,,,-1,2,,对野人伤害+,2,6,7,,,,,,,,,,,ff8033CD,magic_hunter,,attack_undead_add,,,
+60,60003,野人伤害加成,80,11611,3,1,3,MONSTER_DAMAGE,0.4,0.5,,,-1,2,,对野人伤害+,2,6,7,,,,,,,,,,,ff8033CD,magic_hunter,,attack_undead_add,,,
+61,61001,精英伤害加成,100,,1,1,3,MONSTER_DAMAGE,0.1,0.2,,,-1,3,,对精英伤害+,2,6,7,,,,,,,,,,,ff8033CD,magic_hunter,,attack_wither_reduce,,,
+61,61002,精英伤害加成,90,11609,2,1,3,MONSTER_DAMAGE,0.25,0.35,,,-1,3,,对精英伤害+,2,6,7,,,,,,,,,,,ff8033CD,magic_hunter,,attack_wither_reduce,,,
+61,61003,精英伤害加成,80,11611,3,1,3,MONSTER_DAMAGE,0.4,0.5,,,-1,3,,对精英伤害+,2,6,7,,,,,,,,,,,ff8033CD,magic_hunter,,attack_wither_reduce,,,
+62,62001,虚空伤害加成,100,,1,1,3,MONSTER_DAMAGE,0.1,0.2,,,-1,4,,对虚空生物伤害+,2,6,7,,,,,,,,,,,ff8033CD,magic_hunter,,attack_animal_add,,,
+62,62002,虚空伤害加成,90,11609,2,1,3,MONSTER_DAMAGE,0.25,0.35,,,-1,4,,对虚空生物伤害+,2,6,7,,,,,,,,,,,ff8033CD,magic_hunter,,attack_animal_add,,,
+62,62003,虚空伤害加成,80,11611,3,1,3,MONSTER_DAMAGE,0.4,0.5,,,-1,4,,对虚空生物伤害+,2,6,7,,,,,,,,,,,ff8033CD,magic_hunter,,attack_animal_add,,,
+63,63001,外星伤害加成,100,,1,1,3,MONSTER_DAMAGE,0.1,0.2,,,-1,6,,对外星生物伤害+,2,6,7,,,,,,,,,,,ff8033CD,magic_hunter,,attack_undead_add,,,
+63,63002,外星伤害加成,90,11609,2,1,3,MONSTER_DAMAGE,0.25,0.35,,,-1,6,,对外星生物伤害+,2,6,7,,,,,,,,,,,ff8033CD,magic_hunter,,attack_undead_add,,,
+63,63003,外星伤害加成,80,11611,3,1,3,MONSTER_DAMAGE,0.4,0.5,,,-1,6,,对外星生物伤害+,2,6,7,,,,,,,,,,,ff8033CD,magic_hunter,,attack_undead_add,,,
+64,64001,水生伤害加成,100,,1,1,3,MONSTER_DAMAGE,0.1,0.2,,,-1,7,,对水生生物伤害+,2,6,7,,,,,,,,,,,ff8033CD,magic_hunter,,attack_wither_reduce,,,
+64,64002,水生伤害加成,90,11609,2,1,3,MONSTER_DAMAGE,0.25,0.35,,,-1,7,,对水生生物伤害+,2,6,7,,,,,,,,,,,ff8033CD,magic_hunter,,attack_wither_reduce,,,
+64,64003,水生伤害加成,80,11611,3,1,3,MONSTER_DAMAGE,0.4,0.5,,,-1,7,,对水生生物伤害+,2,6,7,,,,,,,,,,,ff8033CD,magic_hunter,,attack_wither_reduce,,,
